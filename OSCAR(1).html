@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier site web: Oscar Dyonne</title>
+    <style>
+        /* Réinitialiser les marges et les rembourrages pour le corps de la page */
+        body {
+            font-family: Andika, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Style pour l'en-tête avec un fond vert foncé */
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        /* Style pour la barre de navigation avec un fond bleu foncé */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px;
+        }
+
+        /* Style pour les liens de navigation avec une transition de couleur au survol */
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        /* Style pour le survol des liens de navigation avec un fond plus sombre */
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+
+        /* Style pour la section principale avec une marge et un affichage en ligne flexible */
+        main {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Style pour chaque section avec une marge */
+        section {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        /* Style pour les titres de section avec une couleur bleue foncée */
+        h2 {
+            color: #3498db;
+        }
+
+        /* Style pour le texte de paragraphe avec une hauteur de ligne augmentée */
+        p {
+            line-height: 1.6;
+        }
+
+        /* Style pour le conteneur avec une largeur maximale et une marge automatique */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Style pour les fonctionnalités avec un affichage en ligne flexible et une ombre de boîte au survol */
+        .feature {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        /* Style pour les images des fonctionnalités avec une bordure arrondie et une transition d'échelle au survol */
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        /* Style pour agrandir l'image au survol */
+        .feature img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Style pour le conteneur du pied de page avec un fond bleu foncé */
+        .footer-container {
+            background-color: #3498db;
+            color: white;
+            padding: 20px 0;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        /* Style pour le texte du pied de page centré */
+        footer {
+            text-align: center;
+        }
+
+        /* Style pour les médias de petite taille (moins de 768 pixels de large) */
+        @media (max-width: 768px) {
+            /* Réorganiser la barre de navigation en colonne */
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* Ajuster la marge des liens de navigation */
+            nav a {
+                margin: 5px 0;
+            }
+
+            /* Réorganiser la disposition principale en colonne */
+            main {
+                flex-direction: column;
+            }
+
+            /* Ajuster la marge des sections pour les petits écrans */
+            section {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête de la page -->
+    <header>
+        <h1 id="Home">Oscar Dyonne</h1>
+    </header>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#About">About me</a>
+        <a href="#School">Scholarship</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+
+    <!-- Contenu principal de la page -->
+    <main class="container">
+        <!-- Première section -->
+        <section>
+            <h2>Oscar Dyonne's first website</h2>
+            <p>For our first task, we were told to make a website by ourselves and present it to our teachers, this is what I made.</p><br>
+			<p>You can click on the tabs above to go to the desired sections.</p>
+        </section>
+
+        <!-- Deuxième section avec des fonctionnalités -->
+        <section>
+            <h2>Fonctionnalités</h2>
+            <div class="feature">
+                <img src="https://via.placeholder.com/300" alt="Fonctionnalité 1">
+                <p>Description de la fonctionnalité 1.</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/300" alt="Fonctionnalité 2">
+                <p>Description de la fonctionnalité 2.</p>
+            </div>
+        </section>
+    </main>
+	
+	
+	
+    <!-- Pied de page -->
+    <footer class="footer-container">
+        <div class="container">
+            <p>&copy; 2023 Oscar Dyonne. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
